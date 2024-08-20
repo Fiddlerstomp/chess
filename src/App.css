@@ -1,0 +1,28 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background-color: rgb(168, 114, 14);
+}
+
+.white {
+  background-color: rgb(160, 160, 160);
+}
