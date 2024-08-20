@@ -1,10 +1,10 @@
 import { Cell } from "../CellModel";
 import { Colors } from "../Colors";
 
-enum PiecesNames {
+export enum PiecesNames {
     PIECE = "",
     PAWN = "pawn",
-    ROCK = "rock",
+    ROOK = "rook",
     KNIGHT = "knight",
     BISHOP = "bishop",
     QUEEN = "queen",
@@ -32,6 +32,6 @@ export class Piece {
     }
 
     move(cell: Cell) {
-        
+
     }
 }

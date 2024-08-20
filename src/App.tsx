@@ -1,4 +1,3 @@
-import whitePices from "./assets/whitepices.svg";
 import "./App.css";
 import BoardComponent from "./components/Board/BoardComponent";
 import { useEffect, useState } from "react";
@@ -14,14 +13,12 @@ function App() {
   const restart = () => {
     const newBoard = new Board();
     newBoard.initCells();
+    newBoard.addPieces();
     setBoard(newBoard);
   }
 
   return (
     <div className="App">
-      {/* <svg>
-        <use xlinkHref={`${whitePices}#${"queen"}`} />
-      </svg> */}
       <BoardComponent board={board} setBoard={setBoard}/>
     </div>
   )

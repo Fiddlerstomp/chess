@@ -1,5 +1,8 @@
 import { Cell } from "./CellModel";
 import { Colors } from "./Colors";
+import { Pawn } from "./pieces/Pawn";
+import { Queen } from "./pieces/Queen";
+
 
 export class Board {
     cells: Cell[][] = [];
@@ -13,5 +16,14 @@ export class Board {
             }
             this.cells.push(row);
         }
+    }
+
+    public getCell(x: number, y: number): Cell {
+        return this.cells[y][x];
+    }
+
+    public addPieces() {
+        new Queen(Colors.BLACK, this.getCell(7, 7));
+        new Pawn(Colors.WHITE, this.getCell(4, 3))
     }
 }

@@ -36,3 +36,7 @@
 .white {
   background-color: rgb(160, 160, 160);
 }
+
+svg {
+  height: 64px;
+}
